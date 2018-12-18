@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" 
+    href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <title>GAME</title>
+<style type="text/css">
+.hd{
+	position: absolute;
+	width: 500px;
+	height:150px;
+	left: 50%;
+	margin-left:-250px;
+	font-size: 90px;
+	text-align: center;
+	overflow: hidden;
+}
+.daohang{
+	position: fixed;
+	right: 5%;
+	top: 177px;
+	width: 140px;
+	height:70px;
+	font-size: 20px;
+	z-index: 1;
+}
+.daohang1{
+	position: fixed;
+	right: 7%;
+	bottom: 10%;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	z-index: 5;
+}	
+#wai {
+	position: absolute;
+	left: 50%;
+	margin-left: -500px;
+	top:160px;
+	width: 1000px;
+	height: 550px;
+	overflow: hidden;
+
+}
+
+#photo {
+
+	width: 4000px;
+
+	animation: switch 8s ease-out infinite;
+
+}
+
+#photo>img {
+
+	float: left;
+
+	width: 1000px;
+
+	height: 550px;
+
+
+}
+
+@keyframes switch {
+
+	0%, 10% {
+
+	margin-left: 0;
+
+}
+
+	25%, 45% {
+	
+	margin-left: -1000px;
+
+}
+
+	55%, 76% {
+
+	margin-left: -2000px;
+
+}
+	88%,100%{
+	margin-left: -3000px;	
+}
+}
+div#wai {
+	outline-style: solid;
+	border: yellow solid thin;
+	outline-width:5px;
+}
+#biandao{
+	position: absolute;
+	top:730px;
+	width: 60px;
+	height: 25px;
+	left: 50%;
+	margin-left: -30px;
+}
+#lei1{
+	background-color: red;
+	width:15px;
+	height: 15px;
+	animation: leifirst 8s ease-out infinite;
+}
+#lei2{
+	background-color: gray;
+	width:15px;
+	height: 15px;
+	animation: leisecond 8s ease-out infinite;
+}
+#lei3{
+	background-color: gray;
+	width:15px;
+	height: 15px;
+	animation: leithird 8s ease-out infinite;
+}
+@keyframes leifirst {
+
+	0%, 10% {
+
+	background:red;
+
+}
+
+	25%, 45% {
+	
+	background:gray;
+
+}
+
+	55%, 76% {
+
+	background:gray;
+
+}
+	88%,100%{
+	background:red;
+}
+}
+@keyframes leisecond {
+
+	0%, 10% {
+
+	background:gray;
+
+}
+
+	25%, 45% {
+	
+	background:red;
+
+}
+
+	55%, 76% {
+
+	background:gray;
+
+}
+	88%,100%{
+	background:gray;	
+}
+}
+@keyframes leithird {
+
+	0%, 10% {
+
+	background:gray;
+
+}
+
+	25%, 45% {
+	
+	background:gray;
+
+}
+
+	55%, 76% {
+
+	background:red;
+
+}
+	88%,100%{
+	background:gray;	
+}
+}
+.fen{
+	position: absolute;
+	top: 1100px;
+	left: 50%;
+	width: 50%；
+	height:0.1px;
+	margin-left:-25%;
+}
+#neirongk{
+	position: absolute;
+	top:840px;
+	left: 50%;
+	margin-left: -40%;
+	width: 80%;
+	height: 1000px;
+	color: rgb(200,200,200);
+}
+.fen1{
+	position: absolute;
+	top: 2960px;
+	left: 50%;
+	width: 50%；
+	height:0.1px;
+	margin-left:-25%;
+}
+#neirongk1{
+	position: absolute;
+	top:2700px;
+	left: 50%;
+	margin-left: -40%;
+	width: 80%;
+	height: 1000px;
+	color: rgb(200,200,200);
+}
+.fen2{
+	position: absolute;
+	top: 2960px;
+	left: 50%;
+	width: 50%；
+	height:0.1px;
+	margin-left:-25%;
+}
+#neirongk2{
+	position: absolute;
+	top:4560px;
+	left: 50%;
+	margin-left: -40%;
+	width: 80%;
+	height: 1000px;
+	color: rgb(200,200,200);
+}
+.tupianbg{
+	position: absolute;
+	top: 2400px;
+	width: 850px;
+	height: 600px;
+	left: 50%;
+	margin-left: -425px;
+	padding: 0px;
+
+}
+.tupianbg2{
+	position: absolute;
+	top: 4250px;
+	width: 850px;
+	height: 600px;
+	left: 50%;
+	margin-left: -425px;
+	padding: 0px;
+
+}
+.tupianbg3{
+	position: absolute;
+	top: 6100px;
+	width: 850px;
+	height: 600px;
+	left: 50%;
+	margin-left: -425px;
+	padding: 0px;
+
+}
+#wai1 {
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	top: 1900px;
+	width: 850px;
+	height: 500px;
+	overflow: hidden;
+}
+#wai2 {
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	top: 3750px;
+	width: 850px;
+	height: 500px;
+	overflow: hidden;
+}
+#wai3 {
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	top: 5600px;
+	width: 850px;
+	height: 500px;
+	overflow: hidden;
+}
+#photo1{
+	width: 3400px;
+	animation: switchone 8s ease-out infinite;
+}
+#photo2{
+	width: 3400px;
+	animation: switchtwo 8s ease-out infinite;
+}
+#photo3{
+	width: 3400px;
+	animation: switchthree 8s ease-out infinite;
+}
+#photo1>img {
+
+	float: left;
+
+	width: 850px;
+
+	height: 500px;
+}
+#photo2>img {
+
+	float: left;
+
+	width: 850px;
+
+	height: 500px;
+}
+#photo3>img {
+
+	float: left;
+
+	width: 850px;
+
+	height: 500px;
+}
+@keyframes switchone {
+
+	0%, 10% {
+
+	margin-left: 0;
+
+}
+
+	25%, 45% {
+	
+	margin-left: -850px;
+
+}
+
+	55%, 76% {
+
+	margin-left: -1700px;
+
+}
+	88%,100%{
+	margin-left: -2550px;	
+}
+}
+@keyframes switchtwo {
+
+	0%, 10% {
+
+	margin-left: 0;
+
+}
+
+	25%, 45% {
+	
+	margin-left: -850px;
+
+}
+
+	55%, 76% {
+
+	margin-left: -1700px;
+
+}
+	88%,100%{
+	margin-left: -2550px;	
+}
+}
+@keyframes switchthree {
+
+	0%, 10% {
+
+	margin-left: 0;
+
+}
+
+	25%, 45% {
+	
+	margin-left: -850px;
+
+}
+
+	55%, 76% {
+
+	margin-left: -1700px;
+
+}
+	88%,100%{
+	margin-left: -2550px;	
+}
+}
+#tran1{
+	transition:width 2s, height 2s;
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s;
+}
+#tran2{
+	transition:width 2s, height 2s;
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s;
+}
+#tran3{
+	transition:width 2s, height 2s;
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s;
+}
+#tran1>img:hover
+{
+	width:950px;
+	height:500px;
+	z-index: 2;
+}
+#tran2>img:hover
+{
+	width:950px;
+	height:500px;
+	z-index: 2;
+}
+#tran3>img:hover
+{
+	width:950px;
+	height:500px;
+	z-index: 2;
+}
+.p1{
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	width: 850px;
+	height:50px;
+	top: 1600px;
+	z-index: 2;
+}		
+.p2{
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	width: 850px;
+	height:50px;
+	top: 3450px;
+	z-index: 2;
+}
+.p3{
+	position: absolute;
+	left: 50%;
+	margin-left: -425px;
+	width: 850px;
+	height:50px;
+	top: 5300px;
+	z-index: 2;
+}
+</style>
+ </head>
+<body>   <!--将背景图片自适应充满页面-->
+    <div 
+        style="position:fixed;background-color:black; top:0px; width: 100%; height: 100%; z-index: -5"><!--z-index:-1定义浮于文字下方-->
+       
+    </div>
+  <div class="hd">
+	<p>Game</p> 
+  </div>
+<div class="daohang">
+<ul>
+	<li><b><a href="#sgjz">上古卷轴5</a></b></li>
+	<li><b><a href="#wushi">巫师3</a></b></li>
+	<li><b><a href="#heihun">黑暗之魂3</a></b></li>
+</ul>
+</div>
+<div class="daohang1"><a href="./first.html""><p><b>Back Home</b></p></a></div>
+<div id="wai">
+
+    <div id="photo"><!--图片轮换效果只能用id选择器，类选择器无法将图片并为长图-->
+
+        <img src="./game/sgjz3.jpg" />
+
+        <img src="./game/heihun.jpg" />
+
+        <img src="./game/wushi.jpg" />
+
+        <img src="./game/sgjz3.jpg" />
+    </div>
+
+</div>
+<table id="biandao">
+	<tr>
+		<th width="5px"><div id="lei1"></div></th>
+		<th width="5px"><div id="lei2"></div></th>
+		<th width="5px"><div id="lei3"></div></th>
+	</tr>
+<div class="fen"><a name="sgjz"></a></div>	
+<table id="neirongk">
+	<tr height="600px">
+		<td width="250px"></td>
+		<td width="280px" align="absmiddle"><img src="./game/sgjz3.jpg" width="220px" height="260px"><p style="font-size: 15px;text-align: center">《The Elder Scrolls V：Skyrim》</p></td>
+		<td><table><tr>
+					<th>项目&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>最低配置</th>
+					<th>推荐配置</th>
+				</tr>
+				<tr>
+					<td>系统&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>Windows XP/7/Vista (32 或 64位)</td>
+					<td>Win XP/7/8</td>
+				</tr>
+				<tr>
+					<td>CPU&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>双核2GHz</td>
+					<td>四核Intel/AMD</td>
+				</tr>
+				<tr>
+					<td>内存&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>4GB（1G内存下可能可以运行，但不推荐）</td>
+					<td>8GB</td>
+				</tr>
+				<tr>
+					<td>硬盘&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>11.78GB可用空间</td>
+					<td>11.78GB可用空间</td>
+				</tr>
+				<tr>
+					<td>显卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>支持9.0C的512M显存显卡</td>
+					<td>支持9.0C的1GB显存显卡 GTX 260/Radeon 4890 或更高</td>
+				</tr>
+				<tr>
+					<td>网络&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>互联接入Steam</td>
+					<td>互联接入Steam</td>
+				</tr>
+				<tr>
+					<td>声卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>支持DX9.0</td>
+					<td>支持DX9.0</td>
+				</tr>
+			</table>
+		</td>	
+</table>
+<div class="p1"><p style="font-size: 20px">
+	Winner of more than 200 Game of the Year Awards, Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features like remastered art and effects, volumetric god rays, dynamic depth of field, screen-space reflections, and more. Skyrim Special Edition also brings the full power of mods to the PC and consoles. New quests, environments, characters, dialogue, armor, weapons and more – with Mods, there are no limits to what you can experience. </p>
+</div>
+<div id="wai1"><div id="photo1">
+							<img src="./game/sgjz.jpg" />
+							<img src="./game/sgjz1.jpg" />
+							<img src="./game/sgjz2.jpg" />
+							<img src="./game/sgjz.jpg" />
+</div></div>
+<table class="tupianbg">	
+	<tr height="100px">
+		<td id="tran1" width="170px" align="absmiddle"><img src="./game/sgjz.jpg" width="170px" height="100px"></td>
+		<td id="tran2" width="170px" align="absmiddle"><img src="./game/sgjz1.jpg" width="170px" height="100px"></td>
+		<td id="tran3" width="170px" align="absmiddle"><img src="./game/sgjz2.jpg" width="170px" height="100px"></td>
+	</tr>	
+</table>
+<div class="fen1"><a name="wushi"></a></div>
+<table id="neirongk1">
+	<tr height="600px">
+		<td width="250px"></td>
+		<td width="280px" align="absmiddle"><img src="./game/wushi.jpg" width="220px" height="260px"><p style="font-size: 15px;text-align: center">《The Witcher 3: Wild Hunt》</p></td>
+		<td><table><tr>
+					<th>项目&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>最低配置</th>
+					<th>推荐配置</th>
+				</tr>
+				<tr>
+					<td>系统&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>64-bit Windows 7 or 64-bit Windows 8 (8.1)</td>
+					<td>64-bit Windows 7 or 64-bit Windows 8 (8.1)</td>
+				</tr>
+				<tr>
+					<td>CPU&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940z&nbsp;&nbsp;</td>
+					<td>Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz</td>
+				</tr>
+				<tr>
+					<td>内存&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>6 GB RAM</td>
+					<td>8 GB RAM</td>
+				</tr>
+				<tr>
+					<td>硬盘&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>40 GB available space</td>
+					<td>40 GB available space</td>
+				</tr>
+				<tr>
+					<td>显卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870</td>
+					<td>Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290</td>
+				</tr>
+				<tr>
+					<td>网络&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>互联接入Steam</td>
+					<td>互联接入Steam</td>
+				</tr>
+				<tr>
+					<td>声卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>支持DX9.0</td>
+					<td>支持DX9.0</td>
+				</tr>
+			</table>
+		</td>	
+</table>
+<div class="p2"><p style="font-size: 20px">
+	《Wizard: Hunting》is a plot-driven open-world role-playing game for the next generation. The story of this work takes place in a dazzling fantasy universe. Every choice made by the players is of great significance, but they also have to face far-reaching consequences. In the vast open world of《Wizard: Hunting》, you can explore commercial cities, Viking pirate islands, dangerous mountain passes and forgotten caves. Players play Gerald of Livia, a professional monster killer. He was entrusted with the search for a child who had appeared in an ancient prophecy. </p>
+</div>
+<div id="wai2"><div id="photo2">
+							<img src="./game/wushi1.jpg" />
+							<img src="./game/wushi2.jpg" />
+							<img src="./game/wushi3.jpg" />
+							<img src="./game/wushi1.jpg" />
+</div></div>
+<table class="tupianbg2">	
+	<tr height="100px">
+		<td id="tran1" width="170px" align="absmiddle"><img src="./game/wushi1.jpg" width="170px" height="100px"></td>
+		<td id="tran2" width="170px" align="absmiddle"><img src="./game/wushi2.jpg" width="170px" height="100px"></td>
+		<td id="tran3" width="170px" align="absmiddle"><img src="./game/wushi3.jpg" width="170px" height="100px"></td>
+	</tr>	
+</table>
+<div class="fen2"><a name="heihun"></a></div>
+<table id="neirongk2">
+	<tr height="600px">
+		<td width="250px"></td>
+		<td width="280px" align="absmiddle"><img src="./game/heihun.jpg" width="220px" height="260px"><p style="font-size: 15px;text-align: center">《Dark Souls 3》</p></td>
+		<td><table><tr>
+					<th>项目&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>最低配置</th>
+					<th>推荐配置</th>
+				</tr>
+				<tr>
+					<td>系统&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>Windows 7 / 8.1 / 10（游戏仅支持64位）</td>
+					<td>Windows 7 / 8.1 / 10（游戏仅支持64位）</td>
+				</tr>
+				<tr>
+					<td>CPU&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>Intel Core i3-2100 / AMD Radeon HD 7950&nbsp;&nbsp;</td>
+					<td>Intel Core i7-3770 / AMD FX-8350</td>
+				</tr>
+				<tr>
+					<td>内存&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>4 GB</td>
+					<td>8 GB RAM</td>
+				</tr>
+				<tr>
+					<td>硬盘&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>25 GB</td>
+					<td>25 GB</td>
+				</tr>
+				<tr>
+					<td>显卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>NVIDIA GeForce GTX 750Ti / AMD Radeon HD 7950&nbsp;&nbsp;</td>
+					<td>NVIDIA GeForce GTX 970 / AMD Radeon R9</td>
+				</tr>
+				<tr>
+					<td>网络&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>互联接入Steam</td>
+					<td>互联接入Steam</td>
+				</tr>
+				<tr>
+					<td>声卡&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>支持DX9.0</td>
+					<td>支持DX9.0</td>
+				</tr>
+			</table>
+		</td>	
+</table>
+<div class="p3"><p style="font-size: 20px">
+	Winning the Gamescom 2015 Best RPG Award and more than 35 awards and nominations at E3 2015 
+DARK SOULS III is a series of new works about to be launched, which are very topical and representative. 
+When the fire is extinguished and the world tends to be destroyed, you will embark on a journey of more suffering, a large number of enemies and difficulties. Players will be immersed in the world of epic atmosphere, feeling the darkness brought by faster playing rhythm and tough fighting intensity. Novice or veteran players will be fascinated by the famous game experience and realistic game pictures. 
+Now only the remaining fire remains... Get ready and embrace the darkness again!
+</p>
+</div>
+<div id="wai3"><div id="photo3">
+							<img src="./game/heihun1.jpg" />
+							<img src="./game/heihun2.jpg" />
+							<img src="./game/heihun3.jpg" />
+							<img src="./game/heihun1.jpg" />
+</div></div>
+<table class="tupianbg3">	
+	<tr height="100px">
+		<td id="tran1" width="170px" align="absmiddle"><img src="./game/heihun1.jpg" width="170px" height="100px"></td>
+		<td id="tran2" width="170px" align="absmiddle"><img src="./game/heihun2.jpg" width="170px" height="100px"></td>
+		<td id="tran3" width="170px" align="absmiddle"><img src="./game/heihun3.jpg" width="170px" height="100px"></td>
+	</tr>	
+</table>
+ </body>
+</html>
