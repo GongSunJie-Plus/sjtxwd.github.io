@@ -1,59 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" 
     href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<title>main net to WEB</title>
-<style>
-.cities {
-    width:1140px;
-    height:175px;
-    background-color:rgb(240,240,240);
-    color:rgb(40,40,40);
-    margin: auto;
-    padding:20px;
+     <link rel="icon" href="tb.ico" type="images/x-ico" />
+	<title>登录</title>
+	<style type="text/css">
+.oneform{
+	position: absolute;
+	width: 290px;
+	height: 190px;
+	left: 50%;
+	margin-left: -145px;
+	top: 270px;
+
 }	
-.father{
-	width: 1140px;
-	height:135px;
-	margin: auto;
+	</style>
+	<script type="text/javascript">
+		function Change_yzm(){
+			var first=Math.floor(Math.random()*10);  //可均衡获取0到9的随机整数。
+			var second=Math.floor(Math.random()*10); 
+			var third=Math.floor(Math.random()*10);
+			var forth=Math.floor(Math.random()*10);
+			first1=first;
+			second1=second;
+			third1=third;
+			forth1=forth;
+			switch(first){
+				case 0:window.document.img1.src="./yzm/0.jpg";break;
+				case 1:window.document.img1.src="./yzm/1.jpg";break;
+				case 2:window.document.img1.src="./yzm/2.jpg";break;
+				case 3:window.document.img1.src="./yzm/3.jpg";break;
+				case 4:window.document.img1.src="./yzm/4.jpg";break;
+				case 5:window.document.img1.src="./yzm/5.jpg";break;
+				case 6:window.document.img1.src="./yzm/6.jpg";break;
+				case 7:window.document.img1.src="./yzm/7.jpg";break;
+				case 8:window.document.img1.src="./yzm/8.jpg";break;
+				case 9:window.document.img1.src="./yzm/9.jpg";break;
+			}
+			switch(second){
+				case 0:window.document.img2.src="./yzm/0.jpg";break;
+				case 1:window.document.img2.src="./yzm/1.jpg";break;
+				case 2:window.document.img2.src="./yzm/2.jpg";break;
+				case 3:window.document.img2.src="./yzm/3.jpg";break;
+				case 4:window.document.img2.src="./yzm/4.jpg";break;
+				case 5:window.document.img2.src="./yzm/5.jpg";break;
+				case 6:window.document.img2.src="./yzm/6.jpg";break;
+				case 7:window.document.img2.src="./yzm/7.jpg";break;
+				case 8:window.document.img2.src="./yzm/8.jpg";break;
+				case 9:window.document.img2.src="./yzm/9.jpg";break;
+			}switch(third){
+				case 0:window.document.img3.src="./yzm/0.jpg";break;
+				case 1:window.document.img3.src="./yzm/1.jpg";break;
+				case 2:window.document.img3.src="./yzm/2.jpg";break;
+				case 3:window.document.img3.src="./yzm/3.jpg";break;
+				case 4:window.document.img3.src="./yzm/4.jpg";break;
+				case 5:window.document.img3.src="./yzm/5.jpg";break;
+				case 6:window.document.img3.src="./yzm/6.jpg";break;
+				case 7:window.document.img3.src="./yzm/7.jpg";break;
+				case 8:window.document.img3.src="./yzm/8.jpg";break;
+				case 9:window.document.img3.src="./yzm/9.jpg";break;
+			}switch(forth){
+				case 0:window.document.img4.src="./yzm/0.jpg";break;
+				case 1:window.document.img4.src="./yzm/1.jpg";break;
+				case 2:window.document.img4.src="./yzm/2.jpg";break;
+				case 3:window.document.img4.src="./yzm/3.jpg";break;
+				case 4:window.document.img4.src="./yzm/4.jpg";break;
+				case 5:window.document.img4.src="./yzm/5.jpg";break;
+				case 6:window.document.img4.src="./yzm/6.jpg";break;
+				case 7:window.document.img4.src="./yzm/7.jpg";break;
+				case 8:window.document.img4.src="./yzm/8.jpg";break;
+				case 9:window.document.img4.src="./yzm/9.jpg";break;
+			}
+}
+			function check_yzm(){
+				var yzm=window.document.dl_form.dl_yzm.value;
+				var tname = window.document.dl_form.dl_zh.value;
+				var one=yzm.charAt(0);
+				var two=yzm.charAt(1);
+				var three=yzm.charAt(2);
+				var four=yzm.charAt(3);
+				first=first1;
+				second=second1;
+				third=third1;
+				forth=forth1;
+				if (one==first && two==second && three==third && four==forth) {
+					var the_form= document.getElementById('aaa');
+					the_form.action="index1.html" + "?name=" + tname + "&sign=1";
+					document.cookie= "name=" + tname +";biaozhi=1;path=/;";
+					the_form.submit();
+					return true;
+				}else{
+					alert("验证码错误");
+					Change_yzm();
+					return false;
+				}
+			}
+			var data;
+
+			function checking(){
+						
+					   var the_name = window.document.dl_form.dl_zh.value;
+ 					   var the_password = window.document.dl_form.dl_mm.value;
+ 					   var string = the_name+"\"\:\""+the_password;
+					    var part = new RegExp(string);
+ 					   if (part.test(data) == true && the_name!= "" && the_password!= "") {
+ 				       check_yzm();
+					    }else{
+ 				       alert("账号或密码错误");
+ 				       Change_yzm();
+ 				       return false;
+					    }
+					}
+					function ajax_accept(){
+					var xmlhttp;
+					if (window.XMLHttpRequest)
+  					{// code for IE7+, Firefox, Chrome, Opera, Safari
+ 					 xmlhttp=new XMLHttpRequest();
+ 					 }
+					else
+  					{// code for IE6, IE5
+  					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+ 					 }
+					xmlhttp.onreadystatechange=function()
+  					{
+  						if (xmlhttp.readyState==4 && xmlhttp.status==200)
+   					 {
+   						 data = xmlhttp.responseText;
+  					  }
+ 						 }
+ 						xmlhttp.open("GET","http://api.guetweb.com/login",true);
+						xmlhttp.send();
+					}
+
+document.onkeydown= function(){
+if (event.keyCode == 13) {
+	checking();
+}
+}
+	</script>
+<body>
+	<div style="position: absolute; width: 100%; height: 100%; z-index: -1"><!--z-index:-1定义浮于文字下方-->
+		<img src="./zc/zc_bg.jpg" height="100%" width="100%">
+	</div>
+		<script type="text/javascript">
+			window.onload=function(){
+				Change_yzm();
+				ajax_accept();
+			}
+		</script>	
+<div class="oneform">
+<form name="dl_form" action="" method="get" onSubmit="" id="aaa"><!--一开始我用submit的但是会在check_yzm()返回false时依然提交https://blog.csdn.net/qq_27574367/article/details/78830216-->
+	账号：<input type="text" name="dl_zh" style="height: 30px;font-size: 20px;background-color: #7FFFD4"><br><br>
+
+	密码：<input type="password" name="dl_mm" style="height: 30px;font-size: 20px;background-color: #7FFFD4"><br><br>
+
+	验证码：<input type="text" name="dl_yzm" style="height: 30px;width: 90px;font-size: 20px;background-color: #7FFFD4">
 	
-}
-.son{
-	width: 333px;
-	height: 135px;	
-	margin:  auto;
-}
-</style>
-</head>
-<title>main net to WEB</title>
-<body>   <!--将背景图片自适应充满页面-->
-    <div 
-        style="position: absolute; width: 100%; height: 100%; z-index: -1"><!--z-index:-1定义浮于文字下方-->
-        <img src="zbg.jpg" height="100%" width="100%" />
-    </div>
+	<a href="#" onClick="Change_yzm();return false;">
+	<img src="./yzm/2.jpg" name="img1" width="14px" height="66px"></a>
+	<a href="#" onClick="Change_yzm();return false;">
+	<img src="./yzm/8.jpg" name="img2"  width="14px" height="66px"></a>
+	<a href="#" onClick="Change_yzm();return false;">
+	<img src="./yzm/7.jpg" name="img3"  width="14px" height="66px"></a>
+	<a href="#" onClick="Change_yzm();return false;">
+	<img src="./yzm/4.jpg" name="img4"  width="14px" height="66px"></a><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="denglu" value="登录" onClick="checking();" style="height: 37px;width: 54px;font-size: 16px">
+	&nbsp;&nbsp;&nbsp;<a href="zc.html" style="font-size: 18px">注册</a>
 
-<div class="cities">
-  <p style="font-size: 70px;margin: auto;margin-left: 40px">A STUDENT WEB</p>
-</div>
-<table class="father">
-	<tr>
-		<th width="380px"><h2><a href="study.html">Study</a></h2></th>
-		<th width="380px"><h2><a href="photo.html">Photos</a></h2></th>
-		<th width="380px"><h2><a href="game.html">Game</a></h2></th>
-	</tr>
-	<tr>
-		<td><p>As a student,studying is important to me.</p>
-          <p>It include many subject,such as Math,Computer,English<br/>......</p></td>
-		<td><p>Photo can save my life image,</p>
-	        <p>and memorialize ago.</p></td>
-		<td><p>In my spare time,</p>
-	        <p>I usally make relax by compute game.</p></td>		
-	</tr>	
+</form></div>
 
-</table>
 
 </body>
+</head>
 </html>
